@@ -27,15 +27,15 @@
                     <label for="inputPassword4" class="form-label">CVC #</label>
                     <input type="password" class="form-control" placeholder="0000" id="inputPassword4">
                 </div>
-                <div class="col-4">
+                <div class="col-md-4">
                     <label for="inputAddress" class="form-label">Amount</label>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">$</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        <input type="text" class="form-control" placeholder="Amount" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <label for="inputFName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="inputFName">
                 </div>
@@ -47,11 +47,12 @@
                     <label for="inputCity" class="form-label">City</label>
                     <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-1">
                     <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Pick a State</option>
-                        <option>California</option>
+                    <select col-sm-1 id="inputState" class="form-select">
+                        <option disabled selected>Pick a State</option>
+                        <option >California</option>
+                        <option >New York</option>
                     </select>
                 </div>
                 <div class="col-md-3">
@@ -62,7 +63,8 @@
                 <div class="row">
                     <div class="col-6 ">
                         <label >We accept:</label>
-                        <div class="bg-secondary col-3 rounded-1 ">
+                        <div class="form-group mt-3 bg-secondary rounded-2 p-1 px-3 d-flex g-4 justify-content-center text-white fs-6"
+                                id="card" name="card" style="width: max-content;">
                             <input type="radio">
                             <i class="fab fa-cc-mastercard"></i>
                             <input type="radio">
